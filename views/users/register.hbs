@@ -1,0 +1,31 @@
+<div class="reg-form">
+  <h3>Register Here</h3>
+  {{#each messages}}
+    {{#each this}}
+      <p class="error">{{this}}</p>
+    {{/each}}
+  {{/each}}
+  <form action="/users/register" method="post">
+    <div class="input">
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" />
+    </div>
+    <div class="input">
+      <label for="password">Password</label>
+      <input type="password" name="password" id="password" />
+    </div>
+    <div class="input">
+      <label for="confirm_password">Confirm Password</label>
+      <input type="password" name="confirmPassword" id="confirm_password" />
+    </div>
+    <div>
+      <input type="submit" value="Register" />
+      <a href="/users/login">Already registered</a>
+    </div>
+
+  </form>
+</div>
+
+<style>
+
+</style>

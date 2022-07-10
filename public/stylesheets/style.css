@@ -1,0 +1,67 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00b7ff;
+}
+
+/* conatiner style  */
+
+.container {
+  margin: 30px auto;
+  position: relative;
+}
+
+/* Navbar Styles */
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+}
+.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: black;
+  padding: 30px;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+/* Registration form Styles */
+
+.reg-form,
+.login-form {
+  border: 1px solid green;
+  padding: 10px;
+  border-radius: 10px;
+  max-width: fit-content;
+  margin: auto;
+}
+.reg-form form,
+.login-form form {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  max-width: fit-content;
+  justify-content: space-around;
+}
+.reg-form div,
+.login-form div {
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+}
